@@ -1,0 +1,19 @@
+# Cache e import di Godot 4 (rigenerata automaticamente, non va versionata)
+.godot/
+
+# Build/esportazioni
+game/export/
+*.pck
+*.exe
+*.x86_64
+*.app
+*.dmg
+mono_crash.*.json
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/

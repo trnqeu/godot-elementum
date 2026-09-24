@@ -1,0 +1,24 @@
+[gd_scene load_steps=1 format=3]
+
+[node name="Main" type="Node2D"]
+
+[node name="Sfondo" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.117647, 0.121569, 0.180392, 1)
+
+[node name="Titolo" type="Label" parent="."]
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 900.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 28
+text = "Elementum — il dungeon dei dadi e delle carte"
+
+[node name="Sottotitolo" type="Label" parent="."]
+offset_left = 40.0
+offset_top = 90.0
+offset_right = 900.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.7, 0.75, 0.85, 1)
+text = "Il progetto funziona! A partire dalla Lezione 1 inizierai a costruire il gioco qui dentro."
