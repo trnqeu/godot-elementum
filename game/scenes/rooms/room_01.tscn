@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene format=3 uid="uid://646k1f6ga2td"]
 
-[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://bd0auruh2dlob" path="res://scenes/player/player.tscn" id="1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_orizzontale"]
 size = Vector2(1152, 32)
@@ -11,77 +11,90 @@ size = Vector2(32, 648)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_colonna"]
 size = Vector2(96, 160)
 
-[node name="Room01" type="Node2D"]
+[node name="Room01" type="Node2D" unique_id=552156421]
 
-[node name="Pavimento" type="ColorRect" parent="."]
+[node name="Pavimento" type="ColorRect" parent="." unique_id=1146628336]
 offset_right = 1152.0
 offset_bottom = 648.0
 color = Color(0.2, 0.21, 0.3, 1)
 
-[node name="MuroSopra" type="StaticBody2D" parent="."]
+[node name="MuroSopra" type="StaticBody2D" parent="." unique_id=407860687]
 position = Vector2(576, 16)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroSopra"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroSopra" unique_id=95469559]
 shape = SubResource("RectangleShape2D_orizzontale")
 
-[node name="ColorRect" type="ColorRect" parent="MuroSopra"]
+[node name="ColorRect" type="ColorRect" parent="MuroSopra" unique_id=1522819969]
 offset_left = -576.0
 offset_top = -16.0
 offset_right = 576.0
 offset_bottom = 16.0
 color = Color(0.42, 0.36, 0.32, 1)
 
-[node name="MuroSotto" type="StaticBody2D" parent="."]
+[node name="MuroSotto" type="StaticBody2D" parent="." unique_id=2100774238]
 position = Vector2(576, 632)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroSotto"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroSotto" unique_id=171675136]
 shape = SubResource("RectangleShape2D_orizzontale")
 
-[node name="ColorRect" type="ColorRect" parent="MuroSotto"]
+[node name="ColorRect" type="ColorRect" parent="MuroSotto" unique_id=1449849927]
 offset_left = -576.0
 offset_top = -16.0
 offset_right = 576.0
 offset_bottom = 16.0
 color = Color(0.42, 0.36, 0.32, 1)
 
-[node name="MuroSinistra" type="StaticBody2D" parent="."]
+[node name="MuroSinistra" type="StaticBody2D" parent="." unique_id=671082574]
 position = Vector2(16, 324)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroSinistra"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroSinistra" unique_id=1726116149]
 shape = SubResource("RectangleShape2D_verticale")
 
-[node name="ColorRect" type="ColorRect" parent="MuroSinistra"]
+[node name="ColorRect" type="ColorRect" parent="MuroSinistra" unique_id=1949737711]
 offset_left = -16.0
 offset_top = -324.0
 offset_right = 16.0
 offset_bottom = 324.0
 color = Color(0.42, 0.36, 0.32, 1)
 
-[node name="MuroDestra" type="StaticBody2D" parent="."]
+[node name="MuroDestra" type="StaticBody2D" parent="." unique_id=1825442097]
 position = Vector2(1136, 324)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroDestra"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroDestra" unique_id=1248358947]
 shape = SubResource("RectangleShape2D_verticale")
 
-[node name="ColorRect" type="ColorRect" parent="MuroDestra"]
+[node name="ColorRect" type="ColorRect" parent="MuroDestra" unique_id=870698966]
 offset_left = -16.0
 offset_top = -324.0
 offset_right = 16.0
 offset_bottom = 324.0
 color = Color(0.42, 0.36, 0.32, 1)
 
-[node name="Colonna" type="StaticBody2D" parent="."]
+[node name="Colonna" type="StaticBody2D" parent="." unique_id=646746323]
 position = Vector2(800, 324)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Colonna"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colonna" unique_id=530936649]
 shape = SubResource("RectangleShape2D_colonna")
 
-[node name="ColorRect" type="ColorRect" parent="Colonna"]
+[node name="ColorRect" type="ColorRect" parent="Colonna" unique_id=1317038919]
 offset_left = -48.0
 offset_top = -80.0
 offset_right = 48.0
 offset_bottom = 80.0
 color = Color(0.55, 0.47, 0.4, 1)
 
-[node name="Player" parent="." instance=ExtResource("1")]
+[node name="Colonna2" type="StaticBody2D" parent="." unique_id=1301097782]
+position = Vector2(300, 324)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Colonna2" unique_id=2011133886]
+shape = SubResource("RectangleShape2D_colonna")
+
+[node name="ColorRect" type="ColorRect" parent="Colonna2" unique_id=1399536665]
+offset_left = -48.0
+offset_top = -80.0
+offset_right = 48.0
+offset_bottom = 80.0
+color = Color(0.55, 0.47, 0.4, 1)
+
+[node name="Player" parent="." unique_id=170146992 instance=ExtResource("1")]
 position = Vector2(300, 324)

@@ -2,7 +2,7 @@ extends CharacterBody2D
 # Lezione 2: l'eroe ora e' un CharacterBody2D, cioe' un corpo "solido"
 # che sbatte contro i muri invece di attraversarli.
 
-@export var velocita: float = 300.0  # quanti pixel al secondo si muove l'eroe
+@export var velocita: float = 600.0  # quanti pixel al secondo si muove l'eroe
 
 
 # _physics_process e' come _process, ma viene chiamata a intervalli regolari
@@ -12,6 +12,10 @@ func _physics_process(_delta: float) -> void:
 	direzione.x = Input.get_axis("ui_left", "ui_right")
 	direzione.y = Input.get_axis("ui_up", "ui_down")
 	direzione = direzione.normalized()
+	
+	position.x = clamp(position.x, 0, 1152)
+	position.y = clamp(position.y, 0, 648)
+
 
 	# "velocity" e' una variabile che ogni CharacterBody2D ha gia': diciamo
 	# quanto veloce vogliamo andare e in che direzione...
