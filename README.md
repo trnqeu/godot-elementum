@@ -25,7 +25,7 @@ Usate la stessa versione minore su entrambi i computer.
 | 0 | [Prepariamo il computer](lessons/00-setup-git-e-godot.md) | Ambiente pronto su entrambi i computer |
 | 1 | [Il tuo eroe si muove!](lessons/01-il-tuo-eroe-si-muove.md) | Uno sprite che si muove con le frecce |
 | 2 | [Il tuo primo dungeon](lessons/02-il-tuo-primo-dungeon.md) | L'eroe bloccato dai muri di una stanza |
-| 3 | Porte e stanze | Si passa da una stanza all'altra |
+| 3 | [Porte e stanze](lessons/03-porte-e-stanze.md) | Si passa da una stanza all'altra |
 | 4 | Statistiche del personaggio | HP e attacco del tuo eroe |
 | 5 | HUD e barra vita | Barra vita in alto allo schermo |
 | 6 | Il primo nemico e i dadi | Nemico colpibile, danno calcolato coi dadi (d20!) |
